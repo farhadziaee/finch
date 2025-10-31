@@ -6,11 +6,20 @@
 
 {% block content %}
 <div class="my-6">
-  <div>
-    <h1 class="text-2xl font-semibold text-slate-800">
-      {{ $t('welcome.message') }}
-      {{ $t('logo') }}
-    </h1>
+  <div dir="ltr">
+    <div class=" flex flex-row items-center justify-center gap-6 py-8">
+      <div class="rounded-full shadow-lg bg-white p-0 flex items-center justify-center">
+        <img
+          src="{{ $e.url('logo.svg') }}"
+          alt="{{ $t('logo.title') }}"
+          class="w-20 h-20 object-contain drop-shadow-md"
+        />
+      </div>
+      <div class="flex flex-col justify-center">
+        <b style="font-size: 2rem;" class="font-extrabold text-slate-800">{{ $t('logo') }}</b>
+        <span class="text-xs text-slate-400 mt-1 tracking-widest">{{ version }}</span>
+      </div>
+    </div>
   </div>
   {% if loginResult != true %}
   <div class="mt-4 rounded-lg border border-slate-200 bg-white shadow-sm">

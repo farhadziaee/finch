@@ -10,7 +10,7 @@
   "features.title": "Finch funktioner",
   "features.description": "Finch giver dig alt, hvad du behøver for at bygge en kraftfuld finchlikation på den simpleste måde muligt ved hjælp af Dart-sproget. Dette værktøj inkluderer et sæt funktioner til at skabe en hurtig, let og robust finch. Her er nogle af de funktioner, den tilbyder:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Cron Jobs",
   "features.routing": "Routing",
   "features.formvalidators": "Formularvalidatorer",

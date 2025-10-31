@@ -10,7 +10,7 @@
   "features.title": "תכונות Finch",
   "features.description": "Finch מספק לך כל מה שאתה צריך כדי לבנות אפליקציית אינטרנט חזקה בדרך הפשוטה ביותר האפשרית באמצעות שפת Dart. כלי זה כולל קבוצה של תכונות ליצירת אפליקציית אינטרנט מהירה, קלה וחזקה. הנה כמה מהתכונות שהוא מציע:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Cron Jobs",
   "features.routing": "ניתוב",
   "features.formvalidators": "מאמתי טפסים",

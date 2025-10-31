@@ -79,7 +79,7 @@ class FinchConfigs {
     this.cookiePassword = "password",
     FinchMysqlConfig? mysqlConfig,
     FinchSqliteConfig? sqliteConfig,
-    this.poweredBy = "Dart with package:finch",
+    this.poweredBy = "Dart Finch",
     this.enableLocalDebugger = false,
   }) {
     this.appPath = appPath ?? pathApp;

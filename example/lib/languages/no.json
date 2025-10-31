@@ -10,7 +10,7 @@
   "features.title": "Finch funksjoner",
   "features.description": "Finch gir deg alt du trenger for å bygge en kraftig nettapplikasjon på den enkleste måten mulig ved hjelp av Dart-språket. Dette verktøyet inkluderer et sett med funksjoner for å lage en rask, lett og robust nettapp. Her er noen av funksjonene den tilbyr:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Cron Jobs",
   "features.routing": "Ruting",
   "features.formvalidators": "Skjemavalidatorer",

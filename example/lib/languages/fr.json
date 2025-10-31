@@ -10,7 +10,7 @@
   "features.title": "Fonctionnalités de Finch",
   "features.description": "Finch vous fournit tout ce dont vous avez besoin pour créer une application web puissante de la manière la plus simple possible en utilisant le langage Dart. Cet outil comprend un ensemble de fonctionnalités pour créer une application web rapide, légère et robuste. Voici certaines des fonctionnalités qu'il offre :",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Tâches planifiées (Cron Jobs)",
   "features.routing": "Routage",
   "features.formvalidators": "Validateurs de formulaires",

@@ -10,7 +10,7 @@
   "features.title": "Finch Özellikleri",
   "features.description": "Finch, Dart dilini kullanarak güçlü bir web uygulaması oluşturmak için ihtiyaç duyduğunuz her şeyi en basit şekilde sunar. Bu araç, hızlı, hafif ve sağlam bir web uygulaması oluşturmak için bir dizi özellik içerir. İşte sunduğu bazı özellikler:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Cron Görevleri",
   "features.routing": "Yönlendirme",
   "features.formvalidators": "Form doğrulayıcıları",

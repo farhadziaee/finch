@@ -10,7 +10,7 @@
   "features.title": "Finch ominaisuudet",
   "features.description": "Finch tarjoaa kaiken tarvitsemasi tehokkaan verkkosovelluksen rakentamiseen yksinkertaisimmalla mahdollisella tavalla Dart-kieltä käyttäen. Tämä työkalu sisältää joukon ominaisuuksia nopean, kevyen ja vankan web-sovelluksen luomiseen. Tässä joitakin ominaisuuksia, joita se tarjoaa:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Cron Jobs",
   "features.routing": "Reititys",
   "features.formvalidators": "Lomakkeen validaattorit",

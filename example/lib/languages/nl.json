@@ -10,7 +10,7 @@
   "features.title": "Finch Kenmerken",
   "features.description": "Finch biedt alles wat je nodig hebt om een krachtige finchlicatie op de eenvoudigste manier mogelijk met behulp van de Dart-taal te bouwen. Dit hulpmiddel bevat een reeks functies voor het maken van een snelle, lichte en robuuste finch. Hier zijn enkele van de kenmerken die het biedt:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Cron Jobs",
   "features.routing": "Routing",
   "features.formvalidators": "Formuliervalidatie",

@@ -10,7 +10,7 @@
   "features.title": "ميزات Finch",
   "features.description": "يوفر لك Finch كل ما تحتاجه لبناء تطبيق ويب قوي بأبسط طريقة ممكنة باستخدام لغة Dart. تتضمن هذه الأداة مجموعة من الميزات لإنشاء تطبيق ويب سريع وخفيف وقوي. إليك بعض الميزات التي يقدمها:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "مهام Cron",
   "features.routing": "التوجيه",
   "features.formvalidators": "مدققات النماذج",

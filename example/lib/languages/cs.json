@@ -10,7 +10,7 @@
   "features.title": "Funkce Finch",
   "features.description": "Finch vám poskytuje vše, co potřebujete k vytvoření výkonné webové aplikace nejjednodušším možným způsobem pomocí jazyka Dart. Tento nástroj zahrnuje sadu funkcí pro vytvoření rychlé, lehké a robustní webové aplikace. Zde jsou některé z funkcí, které nabízí:",
   "features.websocket": "WebSocket",
-  "features.mongodb": "MongoDB",
+  "features.mongodb": "MongoDB , MySql ,  SQLite",
   "features.cronjobs": "Cron Jobs",
   "features.routing": "Směrování",
   "features.formvalidators": "Validátory formulářů",
