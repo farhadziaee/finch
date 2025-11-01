@@ -181,14 +181,14 @@ abstract class JinjaTag extends Tag {
 
 /// Represents a single Jinja command block for template logic.
 /// [$Jinja] generates template blocks using the configured block delimiters
-/// (typically `<? command ?>`). These blocks contain template logic such as
+/// (typically `{% command %}`). These blocks contain template logic such as
 /// variable assignments, conditionals, loops, and other Jinja directives.
 /// Example usage:
 /// ```dart
 /// final ifBlock = $Jinja('if user.is_authenticated');
-/// // Generates: <? if user.is_authenticated ?>
+/// // Generates: {% if user.is_authenticated %}
 /// final setVar = $Jinja('set title = "Welcome"');
-/// // Generates: <? set title = "Welcome" ?>
+/// // Generates: {% set title = "Welcome" %}
 /// ```
 class $Jinja extends JinjaTag {
   String command;
@@ -216,7 +216,7 @@ class $Jinja extends JinjaTag {
 ///     CustomTag('li').addChild(TextTag('{{ item.name }}')),
 ///   ],
 /// );
-/// // Generates: <? for item in items ?><li>{{ item.name }}</li><? endfor ?>
+/// // Generates: {% for item in items %}<li>{{ item.name }}</li>{% endfor %}
 /// ```
 class $JinjaBody extends JinjaTag {
   String commandUp;
@@ -254,7 +254,7 @@ class $JinjaBody extends JinjaTag {
 ///     CustomTag('p').addChild(TextTag('This can be overridden')),
 ///   ],
 /// );
-/// // Generates: <? block content ?><h1>Default Content</h1><p>This can be overridden</p><? endblock ?>
+/// // Generates: {% block content %}<h1>Default Content</h1><p>This can be overridden</p>{% endblock %}
 /// ```
 class $JinjaBlock extends $JinjaBody {
   $JinjaBlock({
@@ -273,9 +273,9 @@ class $JinjaBlock extends $JinjaBody {
 /// Example usage:
 /// ```dart
 /// final header = $JinjaInclude('header.html');
-/// // Generates: <? include 'header.html' ?>
+/// // Generates: {% include 'header.html' %}
 /// final sidebar = $JinjaInclude('components/sidebar.html');
-/// // Generates: <? include 'components/sidebar.html' ?>
+/// // Generates: {% include 'components/sidebar.html' %}
 /// ```
 class $JinjaInclude extends $Jinja {
   $JinjaInclude(String template) : super("include '$template'");
@@ -283,15 +283,15 @@ class $JinjaInclude extends $Jinja {
 
 /// Represents a Jinja variable output expression.
 /// [$JinjaVar] generates variable output expressions using the configured
-/// variable delimiters (typically `<?= variable ?>`). These expressions
+/// variable delimiters (typically `{{ variable }}`). These expressions
 /// are evaluated by the template engine and their values are inserted
 /// into the final HTML output.
 /// Example usage:
 /// ```dart
 /// final userName = $JinjaVar('user.name');
-/// // Generates: <?= user.name ?>
+/// // Generates: {{ user.name }}
 /// final greeting = $JinjaVar('greeting | upper');
-/// // Generates: <?= greeting | upper ?>
+/// // Generates: {{ greeting | upper }}
 /// ```
 class $JinjaVar extends JinjaTag {
   String command;
@@ -305,15 +305,15 @@ class $JinjaVar extends JinjaTag {
 
 /// Represents a Jinja template comment.
 /// [$JinjaComment] generates template comments using the configured comment
-/// delimiters (typically `<?# comment ?>`). These comments are processed
+/// delimiters (typically `{# comment #}`). These comments are processed
 /// by the template engine and do not appear in the final HTML output,
 /// making them useful for template documentation and debugging.
 /// Example usage:
 /// ```dart
 /// final note = $JinjaComment('This section renders user profile information');
-/// // Generates: <?# This section renders user profile information ?>
+/// // Generates: {# This section renders user profile information #}
 /// final todo = $JinjaComment('TODO: Add pagination support');
-/// // Generates: <?# Add pagination support ?>
+/// // Generates: {# Add pagination support #}
 /// ```
 class $JinjaComment extends JinjaTag {
   String content;

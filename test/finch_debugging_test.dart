@@ -30,7 +30,7 @@ void main() async {
             path: 'checkurl',
             index: () {
               return rq.renderView(
-                path: "<?= \$e.url('test') ?>",
+                path: "{{ \$e.url('test') }}",
                 isFile: false,
               );
             },
@@ -53,9 +53,9 @@ void main() async {
             index: () {
               rq.addParam("testParam", "paramValue");
               return rq.renderView(
-                path: "<?= \$e.url('test') ?>\n"
-                    "<?= testParam ?>\n"
-                    "<?= \$t('test.translate') ?>\n",
+                path: "{{ \$e.url('test') }}\n"
+                    "{{ testParam }}\n"
+                    "{{ \$t('test.translate') }}\n",
                 isFile: false,
               );
             },

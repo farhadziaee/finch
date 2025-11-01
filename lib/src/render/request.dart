@@ -49,7 +49,6 @@ import 'package:finch/finch_app.dart';
 /// - Widget system integration
 /// **Template Engine Features:**
 /// - Jinja2-compatible template syntax
-/// - Custom blocks: `<? code ?>`, `<?= variable ?>`, `<?# comment ?>`
 /// - Dynamic content injection
 /// - Layout and partial support
 /// The class uses a buffer-based approach for content generation, allowing

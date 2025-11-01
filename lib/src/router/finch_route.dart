@@ -93,7 +93,7 @@ class FinchRoute {
   /// Default variable parameters to use in the content.
   late Map<String, Object?> params;
 
-  /// The title of the page, which can be used as `<?= $e.pageTitle ?>`.
+  /// The title of the page, which can be used as `{{ $e.pageTitle }}`.
   late String title;
 
   /// Paths that should not be included in all sub-paths of `/*`.

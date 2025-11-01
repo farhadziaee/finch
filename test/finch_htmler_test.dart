@@ -55,7 +55,7 @@ void main() {
         '<meta name="viewport" content="width=device-width, initial-s'
         'cale=1.0"/><title>Test Page</title></head><body><h1>Hello, W'
         'orld!</h1><p>This is a test page.</p><a href="https://exampl'
-        'e.com">Click here to visit example.com</a><?= test ?></body>'
+        'e.com">Click here to visit example.com</a>{{ test }}</body>'
         '</html>',
       );
     });
