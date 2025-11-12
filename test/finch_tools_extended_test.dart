@@ -623,8 +623,10 @@ void main() {
       expect(pathNorm('\\path\\to\\file'), 'path\\to\\file');
       expect(pathNorm('/path/to/file', normSlashs: true), 'path/to/file');
       expect(pathNorm('\\path\\to\\file', normSlashs: true), 'path/to/file');
-      expect(pathNorm('path/to/file', endWithSlash: true), 'path/to/file/');
-      expect(pathNorm('path/to/file/', endWithSlash: true), 'path/to/file/');
+      expect(pathNorm('path/to/file', endWithSlash: true, normSlashs: true),
+          'path/to/file/');
+      expect(pathNorm('path/to/file/', endWithSlash: true, normSlashs: true),
+          'path/to/file/');
     });
 
     test('joinPaths with multiple segments', () {
